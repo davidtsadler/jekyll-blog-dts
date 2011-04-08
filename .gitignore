@@ -2,3 +2,4 @@ public
 *.swp
 *~
 .DS_Store
+_site_build/_posts/dummy_posts/*

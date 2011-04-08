@@ -1,2 +1,3 @@
 source: _site_build
 destination: public
+permalink: /archives/:year/:month/:day/:title/
