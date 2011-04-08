@@ -1,7 +1,7 @@
 namespace :jekyll do
   desc 'Delete generated _site files'
   task :clean do
-    system "rm -rf _site"
+    system "rm -rf public"
   end
 
   desc 'Run the dev server'
