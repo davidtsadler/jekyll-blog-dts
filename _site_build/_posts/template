@@ -1,5 +1,8 @@
 ---
 layout: default
 title: :title
+meta-description:
+meta-author: David Terence Sadler
+meta-robots: noodp, noydir
 ---
 :content
