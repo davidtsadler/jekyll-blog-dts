@@ -25,9 +25,10 @@ namespace :jekyll do
   desc 'Creates several dummy posts for testing'
   task :dummy_posts => [:load_config, :clean_dummy_posts] do
     system "mkdir -p #{@config['source']}/_posts/dummy_posts"
+    lorem_ipsum = load_lorem_ipsum()
     year = Time.now.year
     (1..20).each do |day|
-      save_post(Time.new(year, 1, day), "Dummy post #{day}", "This dummy post number #{day}", true)
+      save_post(Time.new(year, 1, day), "Dummy post #{day}", lorem_ipsum, true)
     end
   end
 
@@ -54,5 +55,9 @@ namespace :jekyll do
   
   def parameterize(string, sep = '-')
     string.downcase.gsub(/[^a-z0-9\-_]+/, sep)
+  end
+
+  def load_lorem_ipsum
+    File.read("#{@config['source']}/_posts/lorem_ipsum")
   end
 end
