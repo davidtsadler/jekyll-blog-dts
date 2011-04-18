@@ -1,3 +1,4 @@
 source: _site_build
 destination: public
+markdown: rdiscount
 permalink: /archives/:year/:month/:day/:title/
