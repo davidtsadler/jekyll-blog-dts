@@ -4,3 +4,4 @@ markdown: rdiscount
 permalink: /archives/:year/:month/:day/:title/
 site_title: davidtsadler.com
 site_subtitle: My litte bit of the Internet
+site_author: David Terence Sadler
