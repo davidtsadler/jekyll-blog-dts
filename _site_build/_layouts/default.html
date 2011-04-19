@@ -6,15 +6,17 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} - {{ site.site_title }}</title>
   {% include default_meta.html %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css?v=1">
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body>
-  {% include default_header.html %}
-  {% include default_body.html %}
-  {% include default_footer.html %}
+  <div id="container">
+    {% include default_header.html %}
+    {% include default_body.html %}
+    {% include default_footer.html %}
+  </div>
 </body>
 </html>
