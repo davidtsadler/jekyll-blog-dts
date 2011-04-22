@@ -1,0 +1,25 @@
+# Markdown engine that will be used.
+markdown: rdiscount
+
+# Directory where Jekyll will look to transform files.
+source: _site_build
+
+# Directory where Jekyll will save transformed files.
+destination: public
+
+# Format that Jekyll will use when generating URLs to posts.
+permalink: /archives/:year/:month/:day/:title/
+
+# Appended to page title when constructing the <title> elemement. 
+# E.g <title>Post Title - example.com</title>
+# Also used as the contents of the <h1> element found in the site's <header> element. 
+# See _site_build/_includes/default_header.html
+site_title:
+
+# Used as the contents of <h2> elemenet found in the site's <header> element.
+# See _site_build/_includes/default_header.html
+site_subtitle:
+
+# Assumes that the site is written by a single author and is displayed with each post.
+# Used for meta copyright element and the copyright notice that appears in the footer of the site.
+site_author:
