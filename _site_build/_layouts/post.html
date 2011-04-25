@@ -7,4 +7,16 @@ layout: default
     Written on <time datetime="{{ page.date | date: '%Y-%m-%d' }}" pubdate>{{ page.date | date: '%A, %d %B %Y'}}</time> by {{ site.site_author }}
   </header>
   {{ content }}
+  <footer>
+    <nav>
+      <ol>
+        {% if page.previous.url %}
+        <li><a title="{{ page.previous.title }}" href="{{ page.previous.url }}" rel="prev">&laquo; {{ page.previous.title }}</a></li>
+        {% endif %}
+        {% if page.next.url %}
+        <li><a title="{{ page.next.title }}" href="{{ page.next.url }}" rel="prev">{{ page.next.title }} &raquo;</a></li>
+        {% endif %}
+      <ol>
+    </nav>
+  </footer>
 </article>
