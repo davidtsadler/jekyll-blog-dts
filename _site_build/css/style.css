@@ -78,15 +78,44 @@ a:hover { color: #036; }
 /**
  * Primary styles
  *
- * Author: 
+ * Author: D. T. Sadler 
  */
 
+body
+{
+  background: #ffffff url(/img/background.jpg) repeat 0 0
+}
 
+#container
+{
+  margin: 0 auto;
+  max-width: 73.8462em;
+}
 
+#container>header, #container>footer
+{
+  margin: 0 1.0417%;
+  width: 97.9167%;
+}
 
+article
+{
+  float: left;
+  margin: 0 1.0417%;
+  width: 72.9167%;
+}
 
+aside
+{
+  float: right;
+  margin: 0 1.0417%;
+  width: 22.9167%;
+}
 
-
+#container>footer
+{
+  clear: both;
+}
 
 
 
