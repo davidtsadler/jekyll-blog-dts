@@ -98,27 +98,81 @@ body
   width: 97.9167%;
 }
 
+#container>header
+{
+  margin-top: 2.4615em;
+  margin-bottom: 2.4615em;
+}
+
+#main
+{
+  position: relative;
+}
+
 article
 {
-  float: left;
   margin: 0 1.0417%;
   width: 72.9167%;
 }
 
 aside
 {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0 1.0417%;
   width: 22.9167%;
 }
 
 #container>footer
 {
-  clear: both;
+  margin-top: 2.4615em;
 }
 
 
+article
+{
+	position: relative;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
 
+article div.content-box
+{
+  padding: 1.2308em 2.8572%;
+}
+
+article:before, article:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	-webkit-transform: skew(-5deg) rotate(-5deg);
+	-moz-transform: skew(-5deg) rotate(-5deg);
+	-ms-transform: skew(-5deg) rotate(-5deg);
+	-o-transform: skew(-5deg) rotate(-5deg);
+	transform: skew(-5deg) rotate(-5deg);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+}
+article:after
+{
+	left: auto;
+	right: 12px;
+	-webkit-transform: skew(5deg) rotate(5deg);
+	-moz-transform: skew(5deg) rotate(5deg);
+	-ms-transform: skew(5deg) rotate(5deg);
+	-o-transform: skew(5deg) rotate(5deg);
+	transform: skew(5deg) rotate(5deg);
+}
 
 
 
