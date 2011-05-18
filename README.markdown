@@ -11,7 +11,7 @@ While I continue working on [*yabe*](https://github.com/davidtsadler/yabe) I hop
 ## Usage
 
 * Clone this repository with `git clone git://github.com/davidtsadler/jekyll-blog-dts.git my_site`
-* Change into to the site's directory `cd my_site`
+* Change into the site's directory `cd my_site`
 * Use the provided *_config.yml.example* file as the basis for the site's configuration. `cp _config.yml.example _config.yml`
 * Edit *_config.yml* and specify any configuration settings you require.
 * Create some dummy posts for testing with the provided rake task. `rake jekyll:dummy_posts`
