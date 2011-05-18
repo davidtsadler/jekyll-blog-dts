@@ -79,101 +79,81 @@ a:hover { color: #036; }
  * Primary styles
  *
  * Author: D. T. Sadler 
+ * Assumes font size is 13px and line height is 16px.
+ * Page will be 960px wide. 
  */
 
 body
 {
-  background: #ffffff url(/img/background.jpg) repeat 0 0
+  background-color: #333333; 
 }
 
-#container
+#page 
 {
-  margin: 0 auto;
-  max-width: 73.8462em;
+  margin: 1.2307em auto;    /*  16/13 = 1.2307 */
+  max-width: 73.846em;      /* 960/13 = 73.846 */
+  background-color: white;
 }
 
-#container>header, #container>footer
-{
-  margin: 0 1.0417%;
-  width: 97.9167%;
+#page>header, #page>footer
+{ 
+  width: 97.92%;            /* 940/960 = 0.9792 */
+  margin: 0 1.0417%;        /*  10/960 = 0.0104 */
+  background-color: pink; 
 }
 
-#container>header
+#page>header
 {
-  margin-top: 2.4615em;
-  margin-bottom: 2.4615em;
+  margin-bottom: 1.231em;
 }
 
-#main
+#page>footer
 {
-  position: relative;
+  margin-top: 1.231em;
 }
 
 article
-{
-  margin: 0 1.0417%;
-  width: 72.9167%;
+{ 
+  float: left;
+  width: 81.25%;            /* 780/960 = 0.8125 */
+  width: 72.9166%;          /* 700/960 = 0.7292 */
+  margin: 0 1.0417%;        /*  10/960 = 0.0104 */
+  background-color: pink; 
 }
 
 aside
-{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0 1.0417%;
-  width: 22.9167%;
+{ 
+  float: right;
+  width: 14.5833%;          /* 140/960 = 0.1458 */
+  width: 22.9166%;          /* 220/960 = 0.2292 */
+  margin:  0 1.0417%;       /*  10/960 = 0.0104 */
+  background-color: pink; 
 }
 
-#container>footer
+.clear-div
 {
-  margin-top: 2.4615em;
+  clear: both;
 }
 
-
-article
+#page>header h1
 {
-	position: relative;
-	background-color: #fff;
-	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  font-size: 3em;
 }
 
-article div.content-box
+#page>header h2
 {
-  padding: 1.2308em 2.8572%;
+  font-size: 2em;
 }
 
-article:before, article:after
+article h1
 {
-	position: absolute;
-	width: 40%;
-	height: 10px;
-	content: ' ';
-	left: 12px;
-	bottom: 12px;
-	background: transparent;
-	-webkit-transform: skew(-5deg) rotate(-5deg);
-	-moz-transform: skew(-5deg) rotate(-5deg);
-	-ms-transform: skew(-5deg) rotate(-5deg);
-	-o-transform: skew(-5deg) rotate(-5deg);
-	transform: skew(-5deg) rotate(-5deg);
-	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-	z-index: -1;
-}
-article:after
-{
-	left: auto;
-	right: 12px;
-	-webkit-transform: skew(5deg) rotate(5deg);
-	-moz-transform: skew(5deg) rotate(5deg);
-	-ms-transform: skew(5deg) rotate(5deg);
-	-o-transform: skew(5deg) rotate(5deg);
-	transform: skew(5deg) rotate(5deg);
+  font-size: 2em;
 }
 
+article p
+{
+  margin-bottom: 1.2307em;  /*  16/13  = 1.2307 */
+}
 
 
 

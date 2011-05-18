@@ -13,11 +13,11 @@ permalink: /archives/:year/:month/:day/:title/
 # Appended to page title when constructing the <title> elemement. 
 # E.g <title>Post Title - example.com</title>
 # Also used as the contents of the <h1> element found in the site's <header> element. 
-# See _site_build/_includes/default_header.html
+# See _site_build/_layouts/default.html
 site_title:
 
 # Used as the contents of <h2> elemenet found in the site's <header> element.
-# See _site_build/_includes/default_header.html
+# See _site_build/_layouts/default.html
 site_subtitle:
 
 # Assumes that the site is written by a single author and is displayed with each post.
