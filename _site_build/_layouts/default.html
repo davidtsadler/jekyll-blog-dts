@@ -30,18 +30,26 @@
         </ol>
       </nav>
     </header>
-    {{ content }}
-    <aside>
-      <h2>Follow...</h2>
-      <ul>
-        <li><a href="#">RSS</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-      </ul>
-    </aside>
+    <div id="primary">
+      {{ content }}
+    </div>
+    <div id="secondary">
+      <aside id="subscribe">
+        <header>
+          <h1>Subscribe</h1>
+        </header>
+        <ul>
+          <li><a href="#">RSS</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </aside>
+    </div>
     <div class="clear-div"></div>
     <footer>
-      <p><small>Copyright &copy; 2011 by {{ site.site_author }}. All Rights Reserved.</small></p>
+      <section id="copyright">
+        <small>Copyright &copy; 2011 by {{ site.site_author }}. All Rights Reserved.</small>
+      </section>
     </footer>
   </div>
 </body>

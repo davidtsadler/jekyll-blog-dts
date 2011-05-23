@@ -4,9 +4,11 @@ title: Home
 meta-description:
 meta-robots: noodp, noydir
 ---
-<h1>Posts</h1>
-<ul>
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<section>
+  <h1>Posts</h1>
+  <ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>

@@ -112,7 +112,7 @@ body
   margin-top: 1.231em;
 }
 
-article
+#primary
 { 
   float: left;
   width: 81.25%;            /* 780/960 = 0.8125 */
@@ -121,7 +121,7 @@ article
   background-color: pink; 
 }
 
-aside
+#secondary
 { 
   float: right;
   width: 14.5833%;          /* 140/960 = 0.1458 */
