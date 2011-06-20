@@ -16,41 +16,43 @@
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body>
-  <div id="page">
-    <header>
-      <hgroup>
-        <h1><a href="/">{{ site.site_title }}</a></h1>
-        <h2>{{ site.site_subtitle }}</h2>
-      </hgroup>
-      <nav>
-        <ol>
-          <li><a href="/">Home</a></li>
-          <li><a href="/archives/">Archives</a></li>
-          <li><a href="/about/" rel="author">About</a></li>
-        </ol>
-      </nav>
-    </header>
-    <div id="primary">
-      {{ content }}
+  <div id="page960">
+    <div id="page">
+      <header>
+        <hgroup>
+          <h1><a href="/">{{ site.site_title }}</a></h1>
+          <h2>{{ site.site_subtitle }}</h2>
+        </hgroup>
+        <nav>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/archives/">Archives</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+          </ol>
+        </nav>
+      </header>
+      <div id="primary">
+        {{ content }}
+      </div>
+      <div id="secondary">
+        <aside id="subscribe">
+          <header>
+            <h1>Subscribe</h1>
+          </header>
+          <ul>
+            <li><a href="#">RSS</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="clear-div"></div>
+      <footer>
+        <section id="copyright">
+          <small>Copyright &copy; 2011 by {{ site.site_author }}. All Rights Reserved.</small>
+        </section>
+      </footer>
     </div>
-    <div id="secondary">
-      <aside id="subscribe">
-        <header>
-          <h1>Subscribe</h1>
-        </header>
-        <ul>
-          <li><a href="#">RSS</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ul>
-      </aside>
-    </div>
-    <div class="clear-div"></div>
-    <footer>
-      <section id="copyright">
-        <small>Copyright &copy; 2011 by {{ site.site_author }}. All Rights Reserved.</small>
-      </section>
-    </footer>
   </div>
 </body>
 </html>
