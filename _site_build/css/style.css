@@ -197,12 +197,12 @@ body
   color: #ffffff;
 }
 
-article
+#primary>section, article
 {
   padding-left: 1em;
 }
 
-article h1
+#primary>section h1, article h1
 {
   color: #467aa7;
   font-size: 2em;
@@ -216,12 +216,15 @@ article .post-meta
   font-style: italic;
 }
 
-article p
+article p, article h2, article ol, article ul, article pre
 {
   margin-bottom: 1.2307em;  /*  16/13  = 1.2307 */
 }
 
-
+article pre
+{
+  padding: 0;
+}
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
